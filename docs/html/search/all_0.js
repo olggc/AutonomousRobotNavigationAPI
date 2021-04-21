@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dummy',['Dummy',['../class_dummy.html',1,'']]]
+  ['robotnavigation',['RobotNavigation',['../class_robot_navigation.html',1,'']]]
 ];

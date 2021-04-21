@@ -1,0 +1,138 @@
+\hypertarget{class_robot_navigation}{}\section{Robot\+Navigation Class Reference}
+\label{class_robot_navigation}\index{Robot\+Navigation@{Robot\+Navigation}}
+
+
+This is a Robot Navigation class that generate all dynamics for simulation and tests purpose.  
+
+
+
+
+{\ttfamily \#include $<$Robot\+Naviation.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_aaed78c0f698c9f29760979b654caa162}\label{class_robot_navigation_aaed78c0f698c9f29760979b654caa162}} 
+void {\bfseries set\+\_\+dynamic\+\_\+matrix} (mat dynamic\+\_\+matrix)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a3c82191207173bcd52cec1ccf7d6e16c}\label{class_robot_navigation_a3c82191207173bcd52cec1ccf7d6e16c}} 
+void {\bfseries set\+\_\+control\+\_\+matrix} (mat controle\+\_\+matrix)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a691f4f615b422d3a9dfa2e9b6a24f8e2}\label{class_robot_navigation_a691f4f615b422d3a9dfa2e9b6a24f8e2}} 
+void {\bfseries set\+\_\+output\+\_\+matrix} (mat output\+\_\+matrix)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a02aa1b1145036f574a06384d30f7f09e}\label{class_robot_navigation_a02aa1b1145036f574a06384d30f7f09e}} 
+void {\bfseries set\+\_\+path} (mat path)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a498c5c0ddf8fe0c8017b19fa22a99c3d}\label{class_robot_navigation_a498c5c0ddf8fe0c8017b19fa22a99c3d}} 
+void {\bfseries set\+\_\+landmarks\+\_\+map} (mat landmarks\+\_\+map)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a0df1fcf48da067233afaaac8456dde39}\label{class_robot_navigation_a0df1fcf48da067233afaaac8456dde39}} 
+void {\bfseries set\+\_\+state} (mat state)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_aadbafbe16c319df4ccb60e5c83f4af11}\label{class_robot_navigation_aadbafbe16c319df4ccb60e5c83f4af11}} 
+void {\bfseries set\+\_\+aimed\+\_\+state} (mat aimed\+\_\+state)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_ae54d2f6b649c0517b7101322cc69214e}\label{class_robot_navigation_ae54d2f6b649c0517b7101322cc69214e}} 
+void {\bfseries set\+\_\+control\+\_\+vector} (mat control\+\_\+vector)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a51abc98954d87d9ddb5555985b907483}\label{class_robot_navigation_a51abc98954d87d9ddb5555985b907483}} 
+void {\bfseries set\+\_\+imu\+\_\+data} (mat imu\+\_\+data)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a8884b31179a43f86dc31fc65a9c95e3f}\label{class_robot_navigation_a8884b31179a43f86dc31fc65a9c95e3f}} 
+void {\bfseries set\+\_\+ball\+\_\+position} (mat ball\+\_\+position)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_add5c64467da4ca8774dd867247ee7733}\label{class_robot_navigation_add5c64467da4ca8774dd867247ee7733}} 
+void {\bfseries set\+\_\+robots\+\_\+position} (mat robots\+\_\+position)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_acad092d28f0af0069de026b6e9459e45}\label{class_robot_navigation_acad092d28f0af0069de026b6e9459e45}} 
+void {\bfseries set\+\_\+ellapsed\+\_\+time} (float ellapsed\+\_\+time)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_ad4127e6135f10fefffd0524e5cf224e3}\label{class_robot_navigation_ad4127e6135f10fefffd0524e5cf224e3}} 
+void {\bfseries set\+\_\+initial\+\_\+time} (float initial\+\_\+time)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a5f47abc9fd8fe81c2d4df33cd732a84a}\label{class_robot_navigation_a5f47abc9fd8fe81c2d4df33cd732a84a}} 
+void {\bfseries set\+\_\+time\+\_\+step} (float time\+\_\+step)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a3ecd5c2f6f316b4b41b48cb0c28a944e}\label{class_robot_navigation_a3ecd5c2f6f316b4b41b48cb0c28a944e}} 
+mat {\bfseries get\+\_\+state} ()
+\item 
+\mbox{\Hypertarget{class_robot_navigation_aa56d5bc1153358167a4ea2521050a0b9}\label{class_robot_navigation_aa56d5bc1153358167a4ea2521050a0b9}} 
+mat {\bfseries get\+\_\+aimed\+\_\+state} ()
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a825a8172dc71450817593b0dcd6c6dc2}\label{class_robot_navigation_a825a8172dc71450817593b0dcd6c6dc2}} 
+mat {\bfseries get\+\_\+control\+\_\+vector} ()
+\item 
+\mbox{\Hypertarget{class_robot_navigation_ab04ff3cecd3441e13588f1a2c78f4e2c}\label{class_robot_navigation_ab04ff3cecd3441e13588f1a2c78f4e2c}} 
+mat {\bfseries get\+\_\+ball\+\_\+position} ()
+\item 
+\mbox{\Hypertarget{class_robot_navigation_acc50daa5ac82e2900f87d2b312afc518}\label{class_robot_navigation_acc50daa5ac82e2900f87d2b312afc518}} 
+mat {\bfseries get\+\_\+landmarks\+\_\+seen} ()
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a9082eefeea50d92c1cf1ea07620733c3}\label{class_robot_navigation_a9082eefeea50d92c1cf1ea07620733c3}} 
+mat {\bfseries get\+\_\+robots\+\_\+position} ()
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a81ea2b1ff7b0701a716ab6b8bac92be4}\label{class_robot_navigation_a81ea2b1ff7b0701a716ab6b8bac92be4}} 
+mat {\bfseries control\+\_\+p} (mat aimed\+\_\+state, mat control\+\_\+gains)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_aa00a37c4a425f8ba2b83a208845747f5}\label{class_robot_navigation_aa00a37c4a425f8ba2b83a208845747f5}} 
+mat {\bfseries control\+\_\+pi} (mat aimed\+\_\+state, mat control\+\_\+gains)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a5800adf6538584180ca33a2143934dfd}\label{class_robot_navigation_a5800adf6538584180ca33a2143934dfd}} 
+mat {\bfseries control\+\_\+pid} (mat aimed\+\_\+state, mat control\+\_\+gains)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a676195ab5a04e08452dc6fb23f84ce10}\label{class_robot_navigation_a676195ab5a04e08452dc6fb23f84ce10}} 
+mat {\bfseries path\+\_\+planner} (mat state, mat aimed\+\_\+state, mat ball\+\_\+position, mat robots\+\_\+position)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a50667808e539f4b632af5f60628cc228}\label{class_robot_navigation_a50667808e539f4b632af5f60628cc228}} 
+mat {\bfseries velocity\+\_\+odometry} (mat state, mat control\+\_\+vector, float dt)
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a7c37c023dcb318ec260f8d0ad6a1de32}\label{class_robot_navigation_a7c37c023dcb318ec260f8d0ad6a1de32}} 
+mat {\bfseries accelartion\+\_\+odometry} (mat state, mat imu\+\_\+data, mat contrl\+\_\+vector, float dt)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}\label{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}} 
+mat {\bfseries state}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}\label{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}} 
+mat {\bfseries aimed\+\_\+state}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a73838ceedac8376f3c333fcbfcd4a364}\label{class_robot_navigation_a73838ceedac8376f3c333fcbfcd4a364}} 
+mat {\bfseries control\+\_\+vector}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a2f98b7ed470f89e40590ea157912b1f9}\label{class_robot_navigation_a2f98b7ed470f89e40590ea157912b1f9}} 
+mat {\bfseries imu\+\_\+data}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a1e4f1a5b3c01ba9be911c006b478f371}\label{class_robot_navigation_a1e4f1a5b3c01ba9be911c006b478f371}} 
+mat {\bfseries ball\+\_\+position}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_ab40654dfb4a3593172da4b285734cdf5}\label{class_robot_navigation_ab40654dfb4a3593172da4b285734cdf5}} 
+mat {\bfseries landmarks\+\_\+seen}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a75aaeeea363d928d6dc8c6de90824d3f}\label{class_robot_navigation_a75aaeeea363d928d6dc8c6de90824d3f}} 
+mat {\bfseries robots\+\_\+position}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a4ccd950c2d302318d4635263096bc977}\label{class_robot_navigation_a4ccd950c2d302318d4635263096bc977}} 
+float {\bfseries ellapsed\+\_\+time}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a0aefa2162f9e8911625c977b134cd333}\label{class_robot_navigation_a0aefa2162f9e8911625c977b134cd333}} 
+float {\bfseries initial\+\_\+time}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_a1f1de08123eaff99571bb21fa411d4dd}\label{class_robot_navigation_a1f1de08123eaff99571bb21fa411d4dd}} 
+float {\bfseries time\+\_\+step}
+\item 
+\mbox{\Hypertarget{class_robot_navigation_ae121467eb0a241417851e0167234269c}\label{class_robot_navigation_ae121467eb0a241417851e0167234269c}} 
+mat {\bfseries control\+\_\+gains}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is a Robot Navigation class that generate all dynamics for simulation and tests purpose. 
+
+Dummy class with do\+\_\+process function 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/olange/\+Autonomous\+Robot\+Navigation\+A\+P\+I/src/Robot\+Naviation.\+h\end{DoxyCompactItemize}
