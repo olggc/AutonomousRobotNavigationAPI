@@ -93,13 +93,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_control_matrix</b> (mat controle_matrix)</td></tr>
 <tr class="separator:a3c82191207173bcd52cec1ccf7d6e16c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a691f4f615b422d3a9dfa2e9b6a24f8e2"><td class="memItemLeft" align="right" valign="top"><a id="a691f4f615b422d3a9dfa2e9b6a24f8e2"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_matrix</b> (mat output_matrix)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_matrix</b> (mat <a class="el" href="class_robot_navigation.html#a30f84b9b191d662b8d6c5ba9ab4e665b">output_matrix</a>)</td></tr>
 <tr class="separator:a691f4f615b422d3a9dfa2e9b6a24f8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02aa1b1145036f574a06384d30f7f09e"><td class="memItemLeft" align="right" valign="top"><a id="a02aa1b1145036f574a06384d30f7f09e"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_path</b> (mat path)</td></tr>
 <tr class="separator:a02aa1b1145036f574a06384d30f7f09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498c5c0ddf8fe0c8017b19fa22a99c3d"><td class="memItemLeft" align="right" valign="top"><a id="a498c5c0ddf8fe0c8017b19fa22a99c3d"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_landmarks_map</b> (mat landmarks_map)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_landmarks_map</b> (mat <a class="el" href="class_robot_navigation.html#a1efd2001bd7cd70cc80d1c05b1c97988">landmarks_map</a>)</td></tr>
 <tr class="separator:a498c5c0ddf8fe0c8017b19fa22a99c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0df1fcf48da067233afaaac8456dde39"><td class="memItemLeft" align="right" valign="top"><a id="a0df1fcf48da067233afaaac8456dde39"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_state</b> (mat <a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a>)</td></tr>
@@ -171,11 +171,26 @@ mat&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_odometry</b> 
 mat&#160;</td><td class="memItemRight" valign="bottom"><b>acceleration_odometry</b> (mat <a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a>, mat imu_data, mat control_vector, float dt)</td></tr>
 <tr class="separator:a0ca549632dc878d276ab2da06e5ed41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94927041a7f2f2bc9c45803a84d5a9d6"><td class="memItemLeft" align="right" valign="top"><a id="a94927041a7f2f2bc9c45803a84d5a9d6"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>landmark_detection</b> (mat <a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a>, mat landmarks_map)</td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><b>landmark_detection</b> (mat <a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a>, mat <a class="el" href="class_robot_navigation.html#a1efd2001bd7cd70cc80d1c05b1c97988">landmarks_map</a>)</td></tr>
 <tr class="separator:a94927041a7f2f2bc9c45803a84d5a9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
+<tr class="memitem:a1aad778b34e54f7fc85ec3ed744a444c"><td class="memItemLeft" align="right" valign="top"><a id="a1aad778b34e54f7fc85ec3ed744a444c"></a>
+mat&#160;</td><td class="memItemRight" valign="bottom"><b>dynamic_matrix</b></td></tr>
+<tr class="separator:a1aad778b34e54f7fc85ec3ed744a444c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3cd228690cd188060ee65ca92c273be5"><td class="memItemLeft" align="right" valign="top"><a id="a3cd228690cd188060ee65ca92c273be5"></a>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a3cd228690cd188060ee65ca92c273be5">control_matrix</a></td></tr>
+<tr class="memdesc:a3cd228690cd188060ee65ca92c273be5"><td class="mdescLeft">&#160;</td><td class="mdescRight">dynamic matrix - the transition matrix containg system main dynamics <br /></td></tr>
+<tr class="separator:a3cd228690cd188060ee65ca92c273be5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30f84b9b191d662b8d6c5ba9ab4e665b"><td class="memItemLeft" align="right" valign="top"><a id="a30f84b9b191d662b8d6c5ba9ab4e665b"></a>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a30f84b9b191d662b8d6c5ba9ab4e665b">output_matrix</a></td></tr>
+<tr class="memdesc:a30f84b9b191d662b8d6c5ba9ab4e665b"><td class="mdescLeft">&#160;</td><td class="mdescRight">control matrix - the control matrix containg influence of control dynamics on the system <br /></td></tr>
+<tr class="separator:a30f84b9b191d662b8d6c5ba9ab4e665b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efd2001bd7cd70cc80d1c05b1c97988"><td class="memItemLeft" align="right" valign="top"><a id="a1efd2001bd7cd70cc80d1c05b1c97988"></a>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a1efd2001bd7cd70cc80d1c05b1c97988">landmarks_map</a></td></tr>
+<tr class="memdesc:a1efd2001bd7cd70cc80d1c05b1c97988"><td class="mdescLeft">&#160;</td><td class="mdescRight">output matrix - the output matrix containg the dynamics of sensors measure <br /></td></tr>
+<tr class="separator:a1efd2001bd7cd70cc80d1c05b1c97988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93eb7dd2877e1f72f5741fb396adea81"><td class="memItemLeft" align="right" valign="top"><a id="a93eb7dd2877e1f72f5741fb396adea81"></a>
 mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a></td></tr>
 <tr class="memdesc:a93eb7dd2877e1f72f5741fb396adea81"><td class="mdescLeft">&#160;</td><td class="mdescRight">landmarks map - a map containing all the land marks of the footbal field (X,L and T) intersections (x,y,type) <br /></td></tr>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['state',['state',['../class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81',1,'RobotNavigation']]]
+  ['landmarks_5fmap',['landmarks_map',['../class_robot_navigation.html#a1efd2001bd7cd70cc80d1c05b1c97988',1,'RobotNavigation']]]
 ];

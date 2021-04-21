@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7erobotnavigation',['~RobotNavigation',['../class_robot_navigation.html#af29a5bb696c20ee7c8ced94f2c33b893',1,'RobotNavigation']]]
+  ['robotnavigation',['RobotNavigation',['../class_robot_navigation.html',1,'RobotNavigation'],['../class_robot_navigation.html#a949517ad58b54558b5e97fb7154f185b',1,'RobotNavigation::RobotNavigation()']]]
 ];
