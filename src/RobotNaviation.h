@@ -11,9 +11,10 @@ using namespace std;
 * The main purpose of this class is to generate all dynamics and sensoring for simulating in-game enviroment 
 * and test the efienciecy of kalman and particle filter for robot localization.
 */ 
+
 class RobotNavigation
 {
-    private:
+    public:
         mat dynamic_matrix;
         /** dynamic matrix - the transition matrix containg system main dynamics
          */
@@ -26,9 +27,7 @@ class RobotNavigation
         mat landmarks_map;
         /**  landmarks map - a map containing all the land marks of the footbal field (X,L and T) intersections (x,y,type)
          */ 
-    protected:
 
-    public:
         mat state, aimed_state, control_vector, path;
         /**
          * state - the robot actual state (x,y,th)
