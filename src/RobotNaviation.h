@@ -15,50 +15,64 @@ using namespace std;
 class RobotNavigation
 {
     public:
-        mat dynamic_matrix;
         /** dynamic matrix - the transition matrix containg system main dynamics
          */
-        mat control_matrix;
+        mat dynamic_matrix;
         /** control matrix - the control matrix containg influence of control dynamics on the system
          */ 
-        mat output_matrix;
+        mat control_matrix;
         /** output matrix - the output matrix containg the dynamics of sensors measure
          */ 
-        mat landmarks_map;
+        mat output_matrix;
         /**  landmarks map - a map containing all the land marks of the footbal field (X,L and T) intersections (x,y,type)
          */ 
-
-        mat state, aimed_state, control_vector, path;
-        /**
-         * state - the robot actual state (x,y,th)
-         * aimed state - the robot desired state (x,y,th)
-         * control vector - vector containing the controllable variables of the system (v,w)
-         * imu data - matrix to load imu data collected from robot (ax,ay,wz)
+        mat landmarks_map;
+        /** state - the robot actual state (x,y,th)
          */ 
-        mat ball_position, landmarks_seen, robots_position;
-        /**
-         * ball position - a vector which contain the actual ball position (x,y)
-         * landmarks seen - a matrix containing the landmarks seen at the actual moment (x,y,type)
+        mat state;
+        /** aimed state - the robot desired state (x,y,th)
          */ 
-        float ellapsed_time, initial_time, time_step;
-        /**
-         * ellapsed time - ellapsed time since simulation start
-         * initial time - time which simulation started
-         * time step - discrete time step for simulation
+        mat aimed_state;
+        /** control vector - vector containing the controllable variables of the system (v,w)
          */ 
-        mat control_gains_p, control_gains_pi, control_gains_pid;
-        /**
-         * control gain p - vector containing the gains for proportional control for pho, alpha and beta (kp,ka,kb)
-         * control gain pi - vector containing the gains for proportional-integral control for pho and alpha (kp,ka,ka_i)
-         * control gain pid - vector containing the gains for proportional-integral-derivative control for pho and alpha (kp,ka,ka_i,ka_d)
+        mat control_vector;
+        /** path - matrix containg N points of a path [(x0,y0),(x1,y1),...(xn,yn)]
          */ 
-
-        RobotNavigation();
+        mat path;
+        /** ball position - a vector which contain the actual ball position (x,y)
+         */ 
+        mat ball_position;
+        /** landmarks seen - a matrix containing the landmarks seen at the actual moment (x,y,type)
+         */ 
+        mat landmarks_seen;
+        /** robots position - all robots position in the field
+         */ 
+        mat robots_position;
+        /** ellapsed time - ellapsed time since simulation start
+         */ 
+        float ellapsed_time;
+        /** initial time - time which simulation started
+         */ 
+        float initial_time;
+        /** time step - discrete time step for simulation
+         */ 
+        float time_step;
+        /** control gain p - vector containing the gains for proportional control for pho, alpha and beta (kp,ka,kb)
+         */ 
+        mat control_gains_p;
+        /** control gain pi - vector containing the gains for proportional-integral control for pho and alpha (kp,ka,ka_i)
+         */ 
+        mat control_gains_pi;
+        /** control gain pid - vector containing the gains for proportional-integral-derivative control for pho and alpha (kp,ka,ka_i,ka_d)
+         */ 
+        mat control_gains_pid;
         /** Constructor for RobotNavigation
          */ 
-        ~RobotNavigation();
+        RobotNavigation();
         /** Destructor for RobotNavigation
          */ 
+        ~RobotNavigation();
+
 
         void set_dynamic_matrix(mat dynamic_matrix);
         void set_control_matrix(mat controle_matrix);
@@ -74,7 +88,6 @@ class RobotNavigation
         void set_ball_position(mat ball_position);
         void set_robots_position(mat robots_position);
 
-        void set_ellapsed_time(float ellapsed_time);
         void set_initial_time(float initial_time);
         void set_time_step(float time_step);
 
