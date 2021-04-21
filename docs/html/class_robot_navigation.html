@@ -79,15 +79,14 @@ $(function() {
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a949517ad58b54558b5e97fb7154f185b"><td class="memItemLeft" align="right" valign="top"><a id="a949517ad58b54558b5e97fb7154f185b"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a949517ad58b54558b5e97fb7154f185b">RobotNavigation</a> ()</td></tr>
-<tr class="memdesc:a949517ad58b54558b5e97fb7154f185b"><td class="mdescLeft">&#160;</td><td class="mdescRight">control gain p - vector containing the gains for proportional control for pho, alpha and beta (kp,ka,kb) control gain pi - vector containing the gains for proportional-integral control for pho and alpha (kp,ka,ka_i) control gain pid - vector containing the gains for proportional-integral-derivative control for pho and alpha (kp,ka,ka_i,ka_d) <br /></td></tr>
+<tr class="memdesc:a949517ad58b54558b5e97fb7154f185b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_robot_navigation.html" title="This is a Robot Navigation class for simulation and tests purpose. ">RobotNavigation</a>. <br /></td></tr>
 <tr class="separator:a949517ad58b54558b5e97fb7154f185b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af29a5bb696c20ee7c8ced94f2c33b893"><td class="memItemLeft" align="right" valign="top"><a id="af29a5bb696c20ee7c8ced94f2c33b893"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#af29a5bb696c20ee7c8ced94f2c33b893">~RobotNavigation</a> ()</td></tr>
-<tr class="memdesc:af29a5bb696c20ee7c8ced94f2c33b893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for <a class="el" href="class_robot_navigation.html" title="This is a Robot Navigation class for simulation and tests purpose. ">RobotNavigation</a>. <br /></td></tr>
+<tr class="memdesc:af29a5bb696c20ee7c8ced94f2c33b893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="class_robot_navigation.html" title="This is a Robot Navigation class for simulation and tests purpose. ">RobotNavigation</a>. <br /></td></tr>
 <tr class="separator:af29a5bb696c20ee7c8ced94f2c33b893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaed78c0f698c9f29760979b654caa162"><td class="memItemLeft" align="right" valign="top"><a id="aaed78c0f698c9f29760979b654caa162"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#aaed78c0f698c9f29760979b654caa162">set_dynamic_matrix</a> (mat <a class="el" href="class_robot_navigation.html#a1aad778b34e54f7fc85ec3ed744a444c">dynamic_matrix</a>)</td></tr>
-<tr class="memdesc:aaed78c0f698c9f29760979b654caa162"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor for <a class="el" href="class_robot_navigation.html" title="This is a Robot Navigation class for simulation and tests purpose. ">RobotNavigation</a>. <br /></td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_dynamic_matrix</b> (mat <a class="el" href="class_robot_navigation.html#a1aad778b34e54f7fc85ec3ed744a444c">dynamic_matrix</a>)</td></tr>
 <tr class="separator:aaed78c0f698c9f29760979b654caa162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c82191207173bcd52cec1ccf7d6e16c"><td class="memItemLeft" align="right" valign="top"><a id="a3c82191207173bcd52cec1ccf7d6e16c"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_control_matrix</b> (mat controle_matrix)</td></tr>
@@ -96,34 +95,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>set_control_matrix</b
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_output_matrix</b> (mat <a class="el" href="class_robot_navigation.html#a30f84b9b191d662b8d6c5ba9ab4e665b">output_matrix</a>)</td></tr>
 <tr class="separator:a691f4f615b422d3a9dfa2e9b6a24f8e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02aa1b1145036f574a06384d30f7f09e"><td class="memItemLeft" align="right" valign="top"><a id="a02aa1b1145036f574a06384d30f7f09e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_path</b> (mat path)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_path</b> (mat <a class="el" href="class_robot_navigation.html#ac427c1bf3d5df9b984f9dfe4241d1454">path</a>)</td></tr>
 <tr class="separator:a02aa1b1145036f574a06384d30f7f09e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a498c5c0ddf8fe0c8017b19fa22a99c3d"><td class="memItemLeft" align="right" valign="top"><a id="a498c5c0ddf8fe0c8017b19fa22a99c3d"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_landmarks_map</b> (mat <a class="el" href="class_robot_navigation.html#a1efd2001bd7cd70cc80d1c05b1c97988">landmarks_map</a>)</td></tr>
 <tr class="separator:a498c5c0ddf8fe0c8017b19fa22a99c3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0df1fcf48da067233afaaac8456dde39"><td class="memItemLeft" align="right" valign="top"><a id="a0df1fcf48da067233afaaac8456dde39"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_state</b> (mat state)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_state</b> (mat <a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a>)</td></tr>
 <tr class="separator:a0df1fcf48da067233afaaac8456dde39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aadbafbe16c319df4ccb60e5c83f4af11"><td class="memItemLeft" align="right" valign="top"><a id="aadbafbe16c319df4ccb60e5c83f4af11"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_aimed_state</b> (mat aimed_state)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_aimed_state</b> (mat <a class="el" href="class_robot_navigation.html#aaa625625a2ba01d1602891ea19691462">aimed_state</a>)</td></tr>
 <tr class="separator:aadbafbe16c319df4ccb60e5c83f4af11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae54d2f6b649c0517b7101322cc69214e"><td class="memItemLeft" align="right" valign="top"><a id="ae54d2f6b649c0517b7101322cc69214e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_control_vector</b> (mat control_vector)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_control_vector</b> (mat <a class="el" href="class_robot_navigation.html#a73838ceedac8376f3c333fcbfcd4a364">control_vector</a>)</td></tr>
 <tr class="separator:ae54d2f6b649c0517b7101322cc69214e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8884b31179a43f86dc31fc65a9c95e3f"><td class="memItemLeft" align="right" valign="top"><a id="a8884b31179a43f86dc31fc65a9c95e3f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>set_ball_position</b> (mat <a class="el" href="class_robot_navigation.html#a1e4f1a5b3c01ba9be911c006b478f371">ball_position</a>)</td></tr>
 <tr class="separator:a8884b31179a43f86dc31fc65a9c95e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add5c64467da4ca8774dd867247ee7733"><td class="memItemLeft" align="right" valign="top"><a id="add5c64467da4ca8774dd867247ee7733"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_robots_position</b> (mat robots_position)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_robots_position</b> (mat <a class="el" href="class_robot_navigation.html#a75aaeeea363d928d6dc8c6de90824d3f">robots_position</a>)</td></tr>
 <tr class="separator:add5c64467da4ca8774dd867247ee7733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acad092d28f0af0069de026b6e9459e45"><td class="memItemLeft" align="right" valign="top"><a id="acad092d28f0af0069de026b6e9459e45"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_ellapsed_time</b> (float <a class="el" href="class_robot_navigation.html#a4ccd950c2d302318d4635263096bc977">ellapsed_time</a>)</td></tr>
-<tr class="separator:acad092d28f0af0069de026b6e9459e45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4127e6135f10fefffd0524e5cf224e3"><td class="memItemLeft" align="right" valign="top"><a id="ad4127e6135f10fefffd0524e5cf224e3"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_initial_time</b> (float initial_time)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_initial_time</b> (float <a class="el" href="class_robot_navigation.html#a0aefa2162f9e8911625c977b134cd333">initial_time</a>)</td></tr>
 <tr class="separator:ad4127e6135f10fefffd0524e5cf224e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f47abc9fd8fe81c2d4df33cd732a84a"><td class="memItemLeft" align="right" valign="top"><a id="a5f47abc9fd8fe81c2d4df33cd732a84a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>set_time_step</b> (float time_step)</td></tr>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>set_time_step</b> (float <a class="el" href="class_robot_navigation.html#a1f1de08123eaff99571bb21fa411d4dd">time_step</a>)</td></tr>
 <tr class="separator:a5f47abc9fd8fe81c2d4df33cd732a84a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af1ec4d21b09907e7c849ab603a173484"><td class="memItemLeft" align="right" valign="top"><a id="af1ec4d21b09907e7c849ab603a173484"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>load_imu_data</b> (string imu_data_file)</td></tr>
@@ -153,25 +149,25 @@ mat&#160;</td><td class="memItemRight" valign="bottom"><b>get_robots_position</b
 mat&#160;</td><td class="memItemRight" valign="bottom"><b>get_ellapsed_time</b> ()</td></tr>
 <tr class="separator:a63b9ea0c29057b9be47cccff6010eb8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a81ea2b1ff7b0701a716ab6b8bac92be4"><td class="memItemLeft" align="right" valign="top"><a id="a81ea2b1ff7b0701a716ab6b8bac92be4"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>control_p</b> (mat aimed_state, mat control_gains)</td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><b>control_p</b> (mat <a class="el" href="class_robot_navigation.html#aaa625625a2ba01d1602891ea19691462">aimed_state</a>, mat control_gains)</td></tr>
 <tr class="separator:a81ea2b1ff7b0701a716ab6b8bac92be4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa00a37c4a425f8ba2b83a208845747f5"><td class="memItemLeft" align="right" valign="top"><a id="aa00a37c4a425f8ba2b83a208845747f5"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>control_pi</b> (mat aimed_state, mat control_gains)</td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><b>control_pi</b> (mat <a class="el" href="class_robot_navigation.html#aaa625625a2ba01d1602891ea19691462">aimed_state</a>, mat control_gains)</td></tr>
 <tr class="separator:aa00a37c4a425f8ba2b83a208845747f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5800adf6538584180ca33a2143934dfd"><td class="memItemLeft" align="right" valign="top"><a id="a5800adf6538584180ca33a2143934dfd"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>control_pid</b> (mat aimed_state, mat control_gains)</td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><b>control_pid</b> (mat <a class="el" href="class_robot_navigation.html#aaa625625a2ba01d1602891ea19691462">aimed_state</a>, mat control_gains)</td></tr>
 <tr class="separator:a5800adf6538584180ca33a2143934dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a676195ab5a04e08452dc6fb23f84ce10"><td class="memItemLeft" align="right" valign="top"><a id="a676195ab5a04e08452dc6fb23f84ce10"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>path_planner</b> (mat state, mat aimed_state, mat <a class="el" href="class_robot_navigation.html#a1e4f1a5b3c01ba9be911c006b478f371">ball_position</a>, mat robots_position)</td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><b>path_planner</b> (mat <a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a>, mat <a class="el" href="class_robot_navigation.html#aaa625625a2ba01d1602891ea19691462">aimed_state</a>, mat <a class="el" href="class_robot_navigation.html#a1e4f1a5b3c01ba9be911c006b478f371">ball_position</a>, mat <a class="el" href="class_robot_navigation.html#a75aaeeea363d928d6dc8c6de90824d3f">robots_position</a>)</td></tr>
 <tr class="separator:a676195ab5a04e08452dc6fb23f84ce10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50667808e539f4b632af5f60628cc228"><td class="memItemLeft" align="right" valign="top"><a id="a50667808e539f4b632af5f60628cc228"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_odometry</b> (mat state, mat control_vector, float dt)</td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><b>velocity_odometry</b> (mat <a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a>, mat <a class="el" href="class_robot_navigation.html#a73838ceedac8376f3c333fcbfcd4a364">control_vector</a>, float dt)</td></tr>
 <tr class="separator:a50667808e539f4b632af5f60628cc228"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ca549632dc878d276ab2da06e5ed41b"><td class="memItemLeft" align="right" valign="top"><a id="a0ca549632dc878d276ab2da06e5ed41b"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>acceleration_odometry</b> (mat state, mat imu_data, mat control_vector, float dt)</td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><b>acceleration_odometry</b> (mat <a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a>, mat imu_data, mat <a class="el" href="class_robot_navigation.html#a73838ceedac8376f3c333fcbfcd4a364">control_vector</a>, float dt)</td></tr>
 <tr class="separator:a0ca549632dc878d276ab2da06e5ed41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a94927041a7f2f2bc9c45803a84d5a9d6"><td class="memItemLeft" align="right" valign="top"><a id="a94927041a7f2f2bc9c45803a84d5a9d6"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>landmark_detection</b> (mat state, mat <a class="el" href="class_robot_navigation.html#a1efd2001bd7cd70cc80d1c05b1c97988">landmarks_map</a>)</td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><b>landmark_detection</b> (mat <a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a>, mat <a class="el" href="class_robot_navigation.html#a1efd2001bd7cd70cc80d1c05b1c97988">landmarks_map</a>)</td></tr>
 <tr class="separator:a94927041a7f2f2bc9c45803a84d5a9d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -193,46 +189,56 @@ mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="memdesc:a1efd2001bd7cd70cc80d1c05b1c97988"><td class="mdescLeft">&#160;</td><td class="mdescRight">landmarks map - a map containing all the land marks of the footbal field (X,L and T) intersections (x,y,type) <br /></td></tr>
 <tr class="separator:a1efd2001bd7cd70cc80d1c05b1c97988"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93eb7dd2877e1f72f5741fb396adea81"><td class="memItemLeft" align="right" valign="top"><a id="a93eb7dd2877e1f72f5741fb396adea81"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81">state</a></td></tr>
+<tr class="memdesc:a93eb7dd2877e1f72f5741fb396adea81"><td class="mdescLeft">&#160;</td><td class="mdescRight">state - the robot actual state (x,y,th) <br /></td></tr>
 <tr class="separator:a93eb7dd2877e1f72f5741fb396adea81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa625625a2ba01d1602891ea19691462"><td class="memItemLeft" align="right" valign="top"><a id="aaa625625a2ba01d1602891ea19691462"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>aimed_state</b></td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#aaa625625a2ba01d1602891ea19691462">aimed_state</a></td></tr>
+<tr class="memdesc:aaa625625a2ba01d1602891ea19691462"><td class="mdescLeft">&#160;</td><td class="mdescRight">aimed state - the robot desired state (x,y,th) <br /></td></tr>
 <tr class="separator:aaa625625a2ba01d1602891ea19691462"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73838ceedac8376f3c333fcbfcd4a364"><td class="memItemLeft" align="right" valign="top"><a id="a73838ceedac8376f3c333fcbfcd4a364"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>control_vector</b></td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a73838ceedac8376f3c333fcbfcd4a364">control_vector</a></td></tr>
+<tr class="memdesc:a73838ceedac8376f3c333fcbfcd4a364"><td class="mdescLeft">&#160;</td><td class="mdescRight">control vector - vector containing the controllable variables of the system (v,w) <br /></td></tr>
 <tr class="separator:a73838ceedac8376f3c333fcbfcd4a364"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac427c1bf3d5df9b984f9dfe4241d1454"><td class="memItemLeft" align="right" valign="top"><a id="ac427c1bf3d5df9b984f9dfe4241d1454"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>path</b></td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#ac427c1bf3d5df9b984f9dfe4241d1454">path</a></td></tr>
+<tr class="memdesc:ac427c1bf3d5df9b984f9dfe4241d1454"><td class="mdescLeft">&#160;</td><td class="mdescRight">path - matrix containg N points of a path [(x0,y0),(x1,y1),...(xn,yn)] <br /></td></tr>
 <tr class="separator:ac427c1bf3d5df9b984f9dfe4241d1454"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1e4f1a5b3c01ba9be911c006b478f371"><td class="memItemLeft" align="right" valign="top"><a id="a1e4f1a5b3c01ba9be911c006b478f371"></a>
 mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a1e4f1a5b3c01ba9be911c006b478f371">ball_position</a></td></tr>
-<tr class="memdesc:a1e4f1a5b3c01ba9be911c006b478f371"><td class="mdescLeft">&#160;</td><td class="mdescRight">state - the robot actual state (x,y,th) aimed state - the robot desired state (x,y,th) control vector - vector containing the controllable variables of the system (v,w) imu data - matrix to load imu data collected from robot (ax,ay,wz) <br /></td></tr>
+<tr class="memdesc:a1e4f1a5b3c01ba9be911c006b478f371"><td class="mdescLeft">&#160;</td><td class="mdescRight">ball position - a vector which contain the actual ball position (x,y) <br /></td></tr>
 <tr class="separator:a1e4f1a5b3c01ba9be911c006b478f371"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab40654dfb4a3593172da4b285734cdf5"><td class="memItemLeft" align="right" valign="top"><a id="ab40654dfb4a3593172da4b285734cdf5"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>landmarks_seen</b></td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#ab40654dfb4a3593172da4b285734cdf5">landmarks_seen</a></td></tr>
+<tr class="memdesc:ab40654dfb4a3593172da4b285734cdf5"><td class="mdescLeft">&#160;</td><td class="mdescRight">landmarks seen - a matrix containing the landmarks seen at the actual moment (x,y,type) <br /></td></tr>
 <tr class="separator:ab40654dfb4a3593172da4b285734cdf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a75aaeeea363d928d6dc8c6de90824d3f"><td class="memItemLeft" align="right" valign="top"><a id="a75aaeeea363d928d6dc8c6de90824d3f"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>robots_position</b></td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a75aaeeea363d928d6dc8c6de90824d3f">robots_position</a></td></tr>
+<tr class="memdesc:a75aaeeea363d928d6dc8c6de90824d3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">robots position - all robots position in the field <br /></td></tr>
 <tr class="separator:a75aaeeea363d928d6dc8c6de90824d3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ccd950c2d302318d4635263096bc977"><td class="memItemLeft" align="right" valign="top"><a id="a4ccd950c2d302318d4635263096bc977"></a>
 float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a4ccd950c2d302318d4635263096bc977">ellapsed_time</a></td></tr>
-<tr class="memdesc:a4ccd950c2d302318d4635263096bc977"><td class="mdescLeft">&#160;</td><td class="mdescRight">ball position - a vector which contain the actual ball position (x,y) landmarks seen - a matrix containing the landmarks seen at the actual moment (x,y,type) <br /></td></tr>
+<tr class="memdesc:a4ccd950c2d302318d4635263096bc977"><td class="mdescLeft">&#160;</td><td class="mdescRight">ellapsed time - ellapsed time since simulation start <br /></td></tr>
 <tr class="separator:a4ccd950c2d302318d4635263096bc977"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aefa2162f9e8911625c977b134cd333"><td class="memItemLeft" align="right" valign="top"><a id="a0aefa2162f9e8911625c977b134cd333"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>initial_time</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a0aefa2162f9e8911625c977b134cd333">initial_time</a></td></tr>
+<tr class="memdesc:a0aefa2162f9e8911625c977b134cd333"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial time - time which simulation started <br /></td></tr>
 <tr class="separator:a0aefa2162f9e8911625c977b134cd333"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f1de08123eaff99571bb21fa411d4dd"><td class="memItemLeft" align="right" valign="top"><a id="a1f1de08123eaff99571bb21fa411d4dd"></a>
-float&#160;</td><td class="memItemRight" valign="bottom"><b>time_step</b></td></tr>
+float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a1f1de08123eaff99571bb21fa411d4dd">time_step</a></td></tr>
+<tr class="memdesc:a1f1de08123eaff99571bb21fa411d4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">time step - discrete time step for simulation <br /></td></tr>
 <tr class="separator:a1f1de08123eaff99571bb21fa411d4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7ff88f46b33d23be62fc365b650361e"><td class="memItemLeft" align="right" valign="top"><a id="ad7ff88f46b33d23be62fc365b650361e"></a>
 mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#ad7ff88f46b33d23be62fc365b650361e">control_gains_p</a></td></tr>
-<tr class="memdesc:ad7ff88f46b33d23be62fc365b650361e"><td class="mdescLeft">&#160;</td><td class="mdescRight">ellapsed time - ellapsed time since simulation start initial time - time which simulation started time step - discrete time step for simulation <br /></td></tr>
+<tr class="memdesc:ad7ff88f46b33d23be62fc365b650361e"><td class="mdescLeft">&#160;</td><td class="mdescRight">control gain p - vector containing the gains for proportional control for pho, alpha and beta (kp,ka,kb) <br /></td></tr>
 <tr class="separator:ad7ff88f46b33d23be62fc365b650361e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a90738c7f4f1a884edce67e44769b284b"><td class="memItemLeft" align="right" valign="top"><a id="a90738c7f4f1a884edce67e44769b284b"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>control_gains_pi</b></td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a90738c7f4f1a884edce67e44769b284b">control_gains_pi</a></td></tr>
+<tr class="memdesc:a90738c7f4f1a884edce67e44769b284b"><td class="mdescLeft">&#160;</td><td class="mdescRight">control gain pi - vector containing the gains for proportional-integral control for pho and alpha (kp,ka,ka_i) <br /></td></tr>
 <tr class="separator:a90738c7f4f1a884edce67e44769b284b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f450c83221af7ef3e276b65ebfdc50d"><td class="memItemLeft" align="right" valign="top"><a id="a0f450c83221af7ef3e276b65ebfdc50d"></a>
-mat&#160;</td><td class="memItemRight" valign="bottom"><b>control_gains_pid</b></td></tr>
+mat&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_robot_navigation.html#a0f450c83221af7ef3e276b65ebfdc50d">control_gains_pid</a></td></tr>
+<tr class="memdesc:a0f450c83221af7ef3e276b65ebfdc50d"><td class="mdescLeft">&#160;</td><td class="mdescRight">control gain pid - vector containing the gains for proportional-integral-derivative control for pho and alpha (kp,ka,ka_i,ka_d) <br /></td></tr>
 <tr class="separator:a0f450c83221af7ef3e276b65ebfdc50d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

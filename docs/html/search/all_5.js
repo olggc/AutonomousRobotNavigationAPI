@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['output_5fmatrix',['output_matrix',['../class_robot_navigation.html#a30f84b9b191d662b8d6c5ba9ab4e665b',1,'RobotNavigation']]]
+  ['initial_5ftime',['initial_time',['../class_robot_navigation.html#a0aefa2162f9e8911625c977b134cd333',1,'RobotNavigation']]]
 ];

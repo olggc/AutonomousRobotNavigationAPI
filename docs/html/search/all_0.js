@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ball_5fposition',['ball_position',['../class_robot_navigation.html#a1e4f1a5b3c01ba9be911c006b478f371',1,'RobotNavigation']]]
+  ['aimed_5fstate',['aimed_state',['../class_robot_navigation.html#aaa625625a2ba01d1602891ea19691462',1,'RobotNavigation']]]
 ];
