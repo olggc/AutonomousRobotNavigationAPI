@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['state',['state',['../class_robot_navigation.html#a93eb7dd2877e1f72f5741fb396adea81',1,'RobotNavigation']]]
+  ['output_5fmatrix',['output_matrix',['../class_robot_navigation.html#a30f84b9b191d662b8d6c5ba9ab4e665b',1,'RobotNavigation']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['output_5fmatrix',['output_matrix',['../class_robot_navigation.html#a30f84b9b191d662b8d6c5ba9ab4e665b',1,'RobotNavigation']]]
+  ['landmarks_5fmap',['landmarks_map',['../class_robot_navigation.html#a1efd2001bd7cd70cc80d1c05b1c97988',1,'RobotNavigation']]]
 ];
