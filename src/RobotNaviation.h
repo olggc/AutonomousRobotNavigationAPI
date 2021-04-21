@@ -14,15 +14,17 @@ using namespace std;
 class RobotNavigation
 {
     private:
-        mat dynamic_matrix, control_matrix, output_matrix;
-        /**
-         * dynamic matrix - the transition matrix containg system main dynamics
-         * control matrix - the control matrix containg influence of control dynamics on the system
-         * output matrix - the output matrix containg the dynamics of sensors measure
+        mat dynamic_matrix;
+        /** dynamic matrix - the transition matrix containg system main dynamics
          */
+        mat control_matrix;
+        /** control matrix - the control matrix containg influence of control dynamics on the system
+         */ 
+        mat output_matrix;
+        /** output matrix - the output matrix containg the dynamics of sensors measure
+         */ 
         mat landmarks_map;
-        /**  
-         * landmarks map - a map containing all the land marks of the footbal field (X,L and T) intersections (x,y,type)
+        /**  landmarks map - a map containing all the land marks of the footbal field (X,L and T) intersections (x,y,type)
          */ 
     protected:
 
