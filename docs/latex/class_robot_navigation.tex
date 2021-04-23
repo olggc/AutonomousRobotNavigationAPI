@@ -2,7 +2,7 @@
 \label{class_robot_navigation}\index{Robot\+Navigation@{Robot\+Navigation}}
 
 
-This is a Robot Navigation class that generate all dynamics for simulation and tests purpose.  
+This is a Robot Navigation class for simulation and tests purpose.  
 
 
 
@@ -12,126 +12,333 @@ This is a Robot Navigation class that generate all dynamics for simulation and t
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_robot_navigation_a949517ad58b54558b5e97fb7154f185b}\label{class_robot_navigation_a949517ad58b54558b5e97fb7154f185b}} 
+\hyperlink{class_robot_navigation_a949517ad58b54558b5e97fb7154f185b}{Robot\+Navigation} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{class_robot_navigation}{Robot\+Navigation}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_a2c88a38c320bfb414db056f117062043}\label{class_robot_navigation_a2c88a38c320bfb414db056f117062043}} 
+\hyperlink{class_robot_navigation_a2c88a38c320bfb414db056f117062043}{Robot\+Navigation} (mat \hyperlink{class_robot_navigation_a1aad778b34e54f7fc85ec3ed744a444c}{dynamic\+\_\+matrix}, mat \hyperlink{class_robot_navigation_a3cd228690cd188060ee65ca92c273be5}{control\+\_\+matrix}, mat \hyperlink{class_robot_navigation_a30f84b9b191d662b8d6c5ba9ab4e665b}{output\+\_\+matrix}, mat initial\+\_\+state, float \hyperlink{class_robot_navigation_a0aefa2162f9e8911625c977b134cd333}{initial\+\_\+time}, float \hyperlink{class_robot_navigation_a1f1de08123eaff99571bb21fa411d4dd}{time\+\_\+step})
+\begin{DoxyCompactList}\small\item\em Constructor for \hyperlink{class_robot_navigation}{Robot\+Navigation} that set up the main matrices of the class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_af29a5bb696c20ee7c8ced94f2c33b893}\label{class_robot_navigation_af29a5bb696c20ee7c8ced94f2c33b893}} 
+\hyperlink{class_robot_navigation_af29a5bb696c20ee7c8ced94f2c33b893}{$\sim$\+Robot\+Navigation} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \hyperlink{class_robot_navigation}{Robot\+Navigation}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_aaed78c0f698c9f29760979b654caa162}\label{class_robot_navigation_aaed78c0f698c9f29760979b654caa162}} 
-void {\bfseries set\+\_\+dynamic\+\_\+matrix} (mat dynamic\+\_\+matrix)
-\item 
+void \hyperlink{class_robot_navigation_aaed78c0f698c9f29760979b654caa162}{set\+\_\+dynamic\+\_\+matrix} (mat \hyperlink{class_robot_navigation_a1aad778b34e54f7fc85ec3ed744a444c}{dynamic\+\_\+matrix})
+\begin{DoxyCompactList}\small\item\em Set Dynamic Matrix. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a3c82191207173bcd52cec1ccf7d6e16c}\label{class_robot_navigation_a3c82191207173bcd52cec1ccf7d6e16c}} 
-void {\bfseries set\+\_\+control\+\_\+matrix} (mat controle\+\_\+matrix)
-\item 
+void \hyperlink{class_robot_navigation_a3c82191207173bcd52cec1ccf7d6e16c}{set\+\_\+control\+\_\+matrix} (mat controle\+\_\+matrix)
+\begin{DoxyCompactList}\small\item\em Set Control Matrix. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a691f4f615b422d3a9dfa2e9b6a24f8e2}\label{class_robot_navigation_a691f4f615b422d3a9dfa2e9b6a24f8e2}} 
-void {\bfseries set\+\_\+output\+\_\+matrix} (mat output\+\_\+matrix)
-\item 
+void \hyperlink{class_robot_navigation_a691f4f615b422d3a9dfa2e9b6a24f8e2}{set\+\_\+output\+\_\+matrix} (mat \hyperlink{class_robot_navigation_a30f84b9b191d662b8d6c5ba9ab4e665b}{output\+\_\+matrix})
+\begin{DoxyCompactList}\small\item\em Set Output Matrix. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a02aa1b1145036f574a06384d30f7f09e}\label{class_robot_navigation_a02aa1b1145036f574a06384d30f7f09e}} 
-void {\bfseries set\+\_\+path} (mat path)
-\item 
+void \hyperlink{class_robot_navigation_a02aa1b1145036f574a06384d30f7f09e}{set\+\_\+path} (mat \hyperlink{class_robot_navigation_ac427c1bf3d5df9b984f9dfe4241d1454}{path})
+\begin{DoxyCompactList}\small\item\em Set Path. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a498c5c0ddf8fe0c8017b19fa22a99c3d}\label{class_robot_navigation_a498c5c0ddf8fe0c8017b19fa22a99c3d}} 
-void {\bfseries set\+\_\+landmarks\+\_\+map} (mat landmarks\+\_\+map)
-\item 
+void \hyperlink{class_robot_navigation_a498c5c0ddf8fe0c8017b19fa22a99c3d}{set\+\_\+landmarks\+\_\+map} (mat \hyperlink{class_robot_navigation_a1efd2001bd7cd70cc80d1c05b1c97988}{landmarks\+\_\+map})
+\begin{DoxyCompactList}\small\item\em Set Landmarks Map. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a0df1fcf48da067233afaaac8456dde39}\label{class_robot_navigation_a0df1fcf48da067233afaaac8456dde39}} 
-void {\bfseries set\+\_\+state} (mat state)
-\item 
+void \hyperlink{class_robot_navigation_a0df1fcf48da067233afaaac8456dde39}{set\+\_\+state} (mat \hyperlink{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}{state})
+\begin{DoxyCompactList}\small\item\em Set Robot State. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_aadbafbe16c319df4ccb60e5c83f4af11}\label{class_robot_navigation_aadbafbe16c319df4ccb60e5c83f4af11}} 
-void {\bfseries set\+\_\+aimed\+\_\+state} (mat aimed\+\_\+state)
-\item 
+void \hyperlink{class_robot_navigation_aadbafbe16c319df4ccb60e5c83f4af11}{set\+\_\+aimed\+\_\+state} (mat \hyperlink{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}{aimed\+\_\+state})
+\begin{DoxyCompactList}\small\item\em Set Robot Aimed State. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_ae54d2f6b649c0517b7101322cc69214e}\label{class_robot_navigation_ae54d2f6b649c0517b7101322cc69214e}} 
-void {\bfseries set\+\_\+control\+\_\+vector} (mat control\+\_\+vector)
-\item 
-\mbox{\Hypertarget{class_robot_navigation_a51abc98954d87d9ddb5555985b907483}\label{class_robot_navigation_a51abc98954d87d9ddb5555985b907483}} 
-void {\bfseries set\+\_\+imu\+\_\+data} (mat imu\+\_\+data)
-\item 
+void \hyperlink{class_robot_navigation_ae54d2f6b649c0517b7101322cc69214e}{set\+\_\+control\+\_\+vector} (mat \hyperlink{class_robot_navigation_a73838ceedac8376f3c333fcbfcd4a364}{control\+\_\+vector})
+\begin{DoxyCompactList}\small\item\em Set Control Vector. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a8884b31179a43f86dc31fc65a9c95e3f}\label{class_robot_navigation_a8884b31179a43f86dc31fc65a9c95e3f}} 
-void {\bfseries set\+\_\+ball\+\_\+position} (mat ball\+\_\+position)
-\item 
+void \hyperlink{class_robot_navigation_a8884b31179a43f86dc31fc65a9c95e3f}{set\+\_\+ball\+\_\+position} (mat \hyperlink{class_robot_navigation_a1e4f1a5b3c01ba9be911c006b478f371}{ball\+\_\+position})
+\begin{DoxyCompactList}\small\item\em Set Ball Position. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_add5c64467da4ca8774dd867247ee7733}\label{class_robot_navigation_add5c64467da4ca8774dd867247ee7733}} 
-void {\bfseries set\+\_\+robots\+\_\+position} (mat robots\+\_\+position)
-\item 
-\mbox{\Hypertarget{class_robot_navigation_acad092d28f0af0069de026b6e9459e45}\label{class_robot_navigation_acad092d28f0af0069de026b6e9459e45}} 
-void {\bfseries set\+\_\+ellapsed\+\_\+time} (float ellapsed\+\_\+time)
-\item 
+void \hyperlink{class_robot_navigation_add5c64467da4ca8774dd867247ee7733}{set\+\_\+robots\+\_\+position} (mat \hyperlink{class_robot_navigation_a75aaeeea363d928d6dc8c6de90824d3f}{robots\+\_\+position})
+\begin{DoxyCompactList}\small\item\em Set Robots Position. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_ad4127e6135f10fefffd0524e5cf224e3}\label{class_robot_navigation_ad4127e6135f10fefffd0524e5cf224e3}} 
-void {\bfseries set\+\_\+initial\+\_\+time} (float initial\+\_\+time)
-\item 
+void \hyperlink{class_robot_navigation_ad4127e6135f10fefffd0524e5cf224e3}{set\+\_\+initial\+\_\+time} (float \hyperlink{class_robot_navigation_a0aefa2162f9e8911625c977b134cd333}{initial\+\_\+time})
+\begin{DoxyCompactList}\small\item\em Set Initial Time. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a5f47abc9fd8fe81c2d4df33cd732a84a}\label{class_robot_navigation_a5f47abc9fd8fe81c2d4df33cd732a84a}} 
-void {\bfseries set\+\_\+time\+\_\+step} (float time\+\_\+step)
-\item 
-\mbox{\Hypertarget{class_robot_navigation_a3ecd5c2f6f316b4b41b48cb0c28a944e}\label{class_robot_navigation_a3ecd5c2f6f316b4b41b48cb0c28a944e}} 
-mat {\bfseries get\+\_\+state} ()
-\item 
+void \hyperlink{class_robot_navigation_a5f47abc9fd8fe81c2d4df33cd732a84a}{set\+\_\+time\+\_\+step} (float \hyperlink{class_robot_navigation_a1f1de08123eaff99571bb21fa411d4dd}{time\+\_\+step})
+\begin{DoxyCompactList}\small\item\em Set Time Step. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_af1ec4d21b09907e7c849ab603a173484}\label{class_robot_navigation_af1ec4d21b09907e7c849ab603a173484}} 
+void \hyperlink{class_robot_navigation_af1ec4d21b09907e7c849ab603a173484}{load\+\_\+imu\+\_\+data} (string imu\+\_\+data\+\_\+file)
+\begin{DoxyCompactList}\small\item\em Load I\+MU Data from text file. \end{DoxyCompactList}\item 
+void \hyperlink{class_robot_navigation_af936fdf445213270848a4fc881d1cdb7}{load\+\_\+landmarks\+\_\+map} (string landmarks\+\_\+map\+\_\+file)
+\begin{DoxyCompactList}\small\item\em Load Landmarks Map from text file. \end{DoxyCompactList}\item 
+mat \hyperlink{class_robot_navigation_a3ecd5c2f6f316b4b41b48cb0c28a944e}{get\+\_\+state} ()
+\begin{DoxyCompactList}\small\item\em Get Robot State. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_aa56d5bc1153358167a4ea2521050a0b9}\label{class_robot_navigation_aa56d5bc1153358167a4ea2521050a0b9}} 
-mat {\bfseries get\+\_\+aimed\+\_\+state} ()
-\item 
+mat \hyperlink{class_robot_navigation_aa56d5bc1153358167a4ea2521050a0b9}{get\+\_\+aimed\+\_\+state} ()
+\begin{DoxyCompactList}\small\item\em Get Robot Aimed State. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a825a8172dc71450817593b0dcd6c6dc2}\label{class_robot_navigation_a825a8172dc71450817593b0dcd6c6dc2}} 
-mat {\bfseries get\+\_\+control\+\_\+vector} ()
-\item 
+mat \hyperlink{class_robot_navigation_a825a8172dc71450817593b0dcd6c6dc2}{get\+\_\+control\+\_\+vector} ()
+\begin{DoxyCompactList}\small\item\em Get Control Vector. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_ab04ff3cecd3441e13588f1a2c78f4e2c}\label{class_robot_navigation_ab04ff3cecd3441e13588f1a2c78f4e2c}} 
-mat {\bfseries get\+\_\+ball\+\_\+position} ()
-\item 
+mat \hyperlink{class_robot_navigation_ab04ff3cecd3441e13588f1a2c78f4e2c}{get\+\_\+ball\+\_\+position} ()
+\begin{DoxyCompactList}\small\item\em Get Ball Position. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_acc50daa5ac82e2900f87d2b312afc518}\label{class_robot_navigation_acc50daa5ac82e2900f87d2b312afc518}} 
-mat {\bfseries get\+\_\+landmarks\+\_\+seen} ()
-\item 
+mat \hyperlink{class_robot_navigation_acc50daa5ac82e2900f87d2b312afc518}{get\+\_\+landmarks\+\_\+seen} ()
+\begin{DoxyCompactList}\small\item\em Get Landmarks Seen. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a9082eefeea50d92c1cf1ea07620733c3}\label{class_robot_navigation_a9082eefeea50d92c1cf1ea07620733c3}} 
-mat {\bfseries get\+\_\+robots\+\_\+position} ()
-\item 
-\mbox{\Hypertarget{class_robot_navigation_a81ea2b1ff7b0701a716ab6b8bac92be4}\label{class_robot_navigation_a81ea2b1ff7b0701a716ab6b8bac92be4}} 
-mat {\bfseries control\+\_\+p} (mat aimed\+\_\+state, mat control\+\_\+gains)
-\item 
-\mbox{\Hypertarget{class_robot_navigation_aa00a37c4a425f8ba2b83a208845747f5}\label{class_robot_navigation_aa00a37c4a425f8ba2b83a208845747f5}} 
-mat {\bfseries control\+\_\+pi} (mat aimed\+\_\+state, mat control\+\_\+gains)
-\item 
-\mbox{\Hypertarget{class_robot_navigation_a5800adf6538584180ca33a2143934dfd}\label{class_robot_navigation_a5800adf6538584180ca33a2143934dfd}} 
-mat {\bfseries control\+\_\+pid} (mat aimed\+\_\+state, mat control\+\_\+gains)
-\item 
-\mbox{\Hypertarget{class_robot_navigation_a676195ab5a04e08452dc6fb23f84ce10}\label{class_robot_navigation_a676195ab5a04e08452dc6fb23f84ce10}} 
-mat {\bfseries path\+\_\+planner} (mat state, mat aimed\+\_\+state, mat ball\+\_\+position, mat robots\+\_\+position)
-\item 
-\mbox{\Hypertarget{class_robot_navigation_a50667808e539f4b632af5f60628cc228}\label{class_robot_navigation_a50667808e539f4b632af5f60628cc228}} 
-mat {\bfseries velocity\+\_\+odometry} (mat state, mat control\+\_\+vector, float dt)
-\item 
-\mbox{\Hypertarget{class_robot_navigation_a7c37c023dcb318ec260f8d0ad6a1de32}\label{class_robot_navigation_a7c37c023dcb318ec260f8d0ad6a1de32}} 
-mat {\bfseries accelartion\+\_\+odometry} (mat state, mat imu\+\_\+data, mat contrl\+\_\+vector, float dt)
-\end{DoxyCompactItemize}
+mat \hyperlink{class_robot_navigation_a9082eefeea50d92c1cf1ea07620733c3}{get\+\_\+robots\+\_\+position} ()
+\begin{DoxyCompactList}\small\item\em Get Robots Position. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_a63b9ea0c29057b9be47cccff6010eb8b}\label{class_robot_navigation_a63b9ea0c29057b9be47cccff6010eb8b}} 
+mat \hyperlink{class_robot_navigation_a63b9ea0c29057b9be47cccff6010eb8b}{get\+\_\+ellapsed\+\_\+time} ()
+\begin{DoxyCompactList}\small\item\em Get Ellapsed Time. \end{DoxyCompactList}\item 
+mat \hyperlink{class_robot_navigation_a7f4ad136002a99b7b52b929fbc58c08e}{control\+\_\+p} (mat \hyperlink{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}{aimed\+\_\+state}, mat \hyperlink{class_robot_navigation_ad7ff88f46b33d23be62fc365b650361e}{control\+\_\+gains\+\_\+p})
+\begin{DoxyCompactList}\small\item\em Performs a Proporcional Control. \end{DoxyCompactList}\item 
+mat \hyperlink{class_robot_navigation_a992572cca235436f7c2f83ec85975818}{control\+\_\+pi} (mat \hyperlink{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}{aimed\+\_\+state}, mat \hyperlink{class_robot_navigation_a90738c7f4f1a884edce67e44769b284b}{control\+\_\+gains\+\_\+pi})
+\begin{DoxyCompactList}\small\item\em Performs a Proporcional-\/\+Integral Control. \end{DoxyCompactList}\item 
+mat \hyperlink{class_robot_navigation_a5800adf6538584180ca33a2143934dfd}{control\+\_\+pid} (mat \hyperlink{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}{aimed\+\_\+state}, mat control\+\_\+gains)
+\begin{DoxyCompactList}\small\item\em Performs a Proporcional-\/\+Integral-\/\+Derivative Control. \end{DoxyCompactList}\item 
+mat \hyperlink{class_robot_navigation_a676195ab5a04e08452dc6fb23f84ce10}{path\+\_\+planner} (mat \hyperlink{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}{state}, mat \hyperlink{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}{aimed\+\_\+state}, mat \hyperlink{class_robot_navigation_a1e4f1a5b3c01ba9be911c006b478f371}{ball\+\_\+position}, mat \hyperlink{class_robot_navigation_a75aaeeea363d928d6dc8c6de90824d3f}{robots\+\_\+position})
+\begin{DoxyCompactList}\small\item\em Plan a path based on ball and Robots position in the field. \end{DoxyCompactList}\item 
+mat \hyperlink{class_robot_navigation_a50667808e539f4b632af5f60628cc228}{velocity\+\_\+odometry} (mat \hyperlink{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}{state}, mat \hyperlink{class_robot_navigation_a73838ceedac8376f3c333fcbfcd4a364}{control\+\_\+vector}, float dt)
+\begin{DoxyCompactList}\small\item\em Performs a odometry from velocity equations. \end{DoxyCompactList}\item 
+mat \hyperlink{class_robot_navigation_a0ca549632dc878d276ab2da06e5ed41b}{acceleration\+\_\+odometry} (mat \hyperlink{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}{state}, mat imu\+\_\+data, mat \hyperlink{class_robot_navigation_a73838ceedac8376f3c333fcbfcd4a364}{control\+\_\+vector}, float dt)
+\begin{DoxyCompactList}\small\item\em Performs a odometry from acceleration equations. \end{DoxyCompactList}\item 
+mat \hyperlink{class_robot_navigation_a94927041a7f2f2bc9c45803a84d5a9d6}{landmark\+\_\+detection} (mat \hyperlink{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}{state}, mat \hyperlink{class_robot_navigation_a1efd2001bd7cd70cc80d1c05b1c97988}{landmarks\+\_\+map})
+\begin{DoxyCompactList}\small\item\em Performs a landmarks detection given robot position. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
+\mbox{\Hypertarget{class_robot_navigation_a1aad778b34e54f7fc85ec3ed744a444c}\label{class_robot_navigation_a1aad778b34e54f7fc85ec3ed744a444c}} 
+mat \hyperlink{class_robot_navigation_a1aad778b34e54f7fc85ec3ed744a444c}{dynamic\+\_\+matrix}
+\begin{DoxyCompactList}\small\item\em dynamic matrix -\/ the transition matrix containg system main dynamics \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_a3cd228690cd188060ee65ca92c273be5}\label{class_robot_navigation_a3cd228690cd188060ee65ca92c273be5}} 
+mat \hyperlink{class_robot_navigation_a3cd228690cd188060ee65ca92c273be5}{control\+\_\+matrix}
+\begin{DoxyCompactList}\small\item\em control matrix -\/ the control matrix containg influence of control dynamics on the system \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_a30f84b9b191d662b8d6c5ba9ab4e665b}\label{class_robot_navigation_a30f84b9b191d662b8d6c5ba9ab4e665b}} 
+mat \hyperlink{class_robot_navigation_a30f84b9b191d662b8d6c5ba9ab4e665b}{output\+\_\+matrix}
+\begin{DoxyCompactList}\small\item\em output matrix -\/ the output matrix containg the dynamics of sensors measure \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_a1efd2001bd7cd70cc80d1c05b1c97988}\label{class_robot_navigation_a1efd2001bd7cd70cc80d1c05b1c97988}} 
+mat \hyperlink{class_robot_navigation_a1efd2001bd7cd70cc80d1c05b1c97988}{landmarks\+\_\+map}
+\begin{DoxyCompactList}\small\item\em landmarks map -\/ a map containing all the land marks of the footbal field (X,L and T) intersections (x,y,type) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}\label{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}} 
-mat {\bfseries state}
-\item 
+mat \hyperlink{class_robot_navigation_a93eb7dd2877e1f72f5741fb396adea81}{state}
+\begin{DoxyCompactList}\small\item\em state -\/ the robot actual state (x,y,th) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}\label{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}} 
-mat {\bfseries aimed\+\_\+state}
-\item 
+mat \hyperlink{class_robot_navigation_aaa625625a2ba01d1602891ea19691462}{aimed\+\_\+state}
+\begin{DoxyCompactList}\small\item\em aimed state -\/ the robot desired state (x,y,th) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a73838ceedac8376f3c333fcbfcd4a364}\label{class_robot_navigation_a73838ceedac8376f3c333fcbfcd4a364}} 
-mat {\bfseries control\+\_\+vector}
-\item 
-\mbox{\Hypertarget{class_robot_navigation_a2f98b7ed470f89e40590ea157912b1f9}\label{class_robot_navigation_a2f98b7ed470f89e40590ea157912b1f9}} 
-mat {\bfseries imu\+\_\+data}
-\item 
+mat \hyperlink{class_robot_navigation_a73838ceedac8376f3c333fcbfcd4a364}{control\+\_\+vector}
+\begin{DoxyCompactList}\small\item\em control vector -\/ vector containing the controllable variables of the system (v,w) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_ac427c1bf3d5df9b984f9dfe4241d1454}\label{class_robot_navigation_ac427c1bf3d5df9b984f9dfe4241d1454}} 
+mat \hyperlink{class_robot_navigation_ac427c1bf3d5df9b984f9dfe4241d1454}{path}
+\begin{DoxyCompactList}\small\item\em path -\/ matrix containg N points of a path \mbox{[}(x0,y0),(x1,y1),...(xn,yn)\mbox{]} \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a1e4f1a5b3c01ba9be911c006b478f371}\label{class_robot_navigation_a1e4f1a5b3c01ba9be911c006b478f371}} 
-mat {\bfseries ball\+\_\+position}
-\item 
+mat \hyperlink{class_robot_navigation_a1e4f1a5b3c01ba9be911c006b478f371}{ball\+\_\+position}
+\begin{DoxyCompactList}\small\item\em ball position -\/ a vector which contain the actual ball position (x,y) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_ab40654dfb4a3593172da4b285734cdf5}\label{class_robot_navigation_ab40654dfb4a3593172da4b285734cdf5}} 
-mat {\bfseries landmarks\+\_\+seen}
-\item 
+mat \hyperlink{class_robot_navigation_ab40654dfb4a3593172da4b285734cdf5}{landmarks\+\_\+seen}
+\begin{DoxyCompactList}\small\item\em landmarks seen -\/ a matrix containing the landmarks seen at the actual moment (x,y,type) \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a75aaeeea363d928d6dc8c6de90824d3f}\label{class_robot_navigation_a75aaeeea363d928d6dc8c6de90824d3f}} 
-mat {\bfseries robots\+\_\+position}
-\item 
+mat \hyperlink{class_robot_navigation_a75aaeeea363d928d6dc8c6de90824d3f}{robots\+\_\+position}
+\begin{DoxyCompactList}\small\item\em robots position -\/ all robots position in the field \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a4ccd950c2d302318d4635263096bc977}\label{class_robot_navigation_a4ccd950c2d302318d4635263096bc977}} 
-float {\bfseries ellapsed\+\_\+time}
-\item 
+float \hyperlink{class_robot_navigation_a4ccd950c2d302318d4635263096bc977}{ellapsed\+\_\+time}
+\begin{DoxyCompactList}\small\item\em ellapsed time -\/ ellapsed time since simulation start \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a0aefa2162f9e8911625c977b134cd333}\label{class_robot_navigation_a0aefa2162f9e8911625c977b134cd333}} 
-float {\bfseries initial\+\_\+time}
-\item 
+float \hyperlink{class_robot_navigation_a0aefa2162f9e8911625c977b134cd333}{initial\+\_\+time}
+\begin{DoxyCompactList}\small\item\em initial time -\/ time which simulation started \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{class_robot_navigation_a1f1de08123eaff99571bb21fa411d4dd}\label{class_robot_navigation_a1f1de08123eaff99571bb21fa411d4dd}} 
-float {\bfseries time\+\_\+step}
-\item 
-\mbox{\Hypertarget{class_robot_navigation_ae121467eb0a241417851e0167234269c}\label{class_robot_navigation_ae121467eb0a241417851e0167234269c}} 
-mat {\bfseries control\+\_\+gains}
-\end{DoxyCompactItemize}
+float \hyperlink{class_robot_navigation_a1f1de08123eaff99571bb21fa411d4dd}{time\+\_\+step}
+\begin{DoxyCompactList}\small\item\em time step -\/ discrete time step for simulation \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_ad7ff88f46b33d23be62fc365b650361e}\label{class_robot_navigation_ad7ff88f46b33d23be62fc365b650361e}} 
+mat \hyperlink{class_robot_navigation_ad7ff88f46b33d23be62fc365b650361e}{control\+\_\+gains\+\_\+p}
+\begin{DoxyCompactList}\small\item\em control gain p -\/ vector containing the gains for proportional control for pho, alpha and beta (krho\+\_\+p,kalpha\+\_\+p,kbeta\+\_\+p) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_a90738c7f4f1a884edce67e44769b284b}\label{class_robot_navigation_a90738c7f4f1a884edce67e44769b284b}} 
+mat \hyperlink{class_robot_navigation_a90738c7f4f1a884edce67e44769b284b}{control\+\_\+gains\+\_\+pi}
+\begin{DoxyCompactList}\small\item\em control gain pi -\/ vector containing the gains for proportional-\/integral control for pho and alpha (krho\+\_\+p,kalpha\+\_\+p,kalpha\+\_\+i) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_robot_navigation_a0f450c83221af7ef3e276b65ebfdc50d}\label{class_robot_navigation_a0f450c83221af7ef3e276b65ebfdc50d}} 
+mat \hyperlink{class_robot_navigation_a0f450c83221af7ef3e276b65ebfdc50d}{control\+\_\+gains\+\_\+pid}
+\begin{DoxyCompactList}\small\item\em control gain pid -\/ vector containing the gains for proportional-\/integral-\/derivative control for pho and alpha (krho\+\_\+p,kalpha\+\_\+p,kalpha\+\_\+i,kalpha\+\_\+d) \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-This is a Robot Navigation class that generate all dynamics for simulation and tests purpose. 
+This is a Robot Navigation class for simulation and tests purpose. 
 
-Dummy class with do\+\_\+process function 
+The main purpose of this class is to generate all dynamics and sensoring for simulating in-\/game enviroment and test the efienciecy of kalman and particle filter for robot localization. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_robot_navigation_a0ca549632dc878d276ab2da06e5ed41b}\label{class_robot_navigation_a0ca549632dc878d276ab2da06e5ed41b}} 
+\index{Robot\+Navigation@{Robot\+Navigation}!acceleration\+\_\+odometry@{acceleration\+\_\+odometry}}
+\index{acceleration\+\_\+odometry@{acceleration\+\_\+odometry}!Robot\+Navigation@{Robot\+Navigation}}
+\subsubsection{\texorpdfstring{acceleration\+\_\+odometry()}{acceleration\_odometry()}}
+{\footnotesize\ttfamily mat Robot\+Navigation\+::acceleration\+\_\+odometry (\begin{DoxyParamCaption}\item[{mat}]{state,  }\item[{mat}]{imu\+\_\+data,  }\item[{mat}]{control\+\_\+vector,  }\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+Performs a odometry from acceleration equations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & robot actual state \\
+\hline
+{\em imu\+\_\+data} & a set of collected data from Robots I\+MU \\
+\hline
+{\em control\+\_\+vector} & control vector (v,w) \\
+\hline
+{\em dt} & time step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new state of the robot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_navigation_a7f4ad136002a99b7b52b929fbc58c08e}\label{class_robot_navigation_a7f4ad136002a99b7b52b929fbc58c08e}} 
+\index{Robot\+Navigation@{Robot\+Navigation}!control\+\_\+p@{control\+\_\+p}}
+\index{control\+\_\+p@{control\+\_\+p}!Robot\+Navigation@{Robot\+Navigation}}
+\subsubsection{\texorpdfstring{control\+\_\+p()}{control\_p()}}
+{\footnotesize\ttfamily mat Robot\+Navigation\+::control\+\_\+p (\begin{DoxyParamCaption}\item[{mat}]{aimed\+\_\+state,  }\item[{mat}]{control\+\_\+gains\+\_\+p }\end{DoxyParamCaption})}
+
+
+
+Performs a Proporcional Control. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aimed\+\_\+state} & derised state of the robot \\
+\hline
+{\em control\+\_\+gains\+\_\+p} & proportional gains (krho\+\_\+p, kalpha\+\_\+p, kbeta\+\_\+p) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+control vector (v,w) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_navigation_a992572cca235436f7c2f83ec85975818}\label{class_robot_navigation_a992572cca235436f7c2f83ec85975818}} 
+\index{Robot\+Navigation@{Robot\+Navigation}!control\+\_\+pi@{control\+\_\+pi}}
+\index{control\+\_\+pi@{control\+\_\+pi}!Robot\+Navigation@{Robot\+Navigation}}
+\subsubsection{\texorpdfstring{control\+\_\+pi()}{control\_pi()}}
+{\footnotesize\ttfamily mat Robot\+Navigation\+::control\+\_\+pi (\begin{DoxyParamCaption}\item[{mat}]{aimed\+\_\+state,  }\item[{mat}]{control\+\_\+gains\+\_\+pi }\end{DoxyParamCaption})}
+
+
+
+Performs a Proporcional-\/\+Integral Control. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aimed\+\_\+state} & derised state of the robot \\
+\hline
+{\em control\+\_\+gains\+\_\+pi} & proportional-\/integral gains (krho\+\_\+p, kalpha\+\_\+p, kalpha\+\_\+i) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+control vector (v,w) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_navigation_a5800adf6538584180ca33a2143934dfd}\label{class_robot_navigation_a5800adf6538584180ca33a2143934dfd}} 
+\index{Robot\+Navigation@{Robot\+Navigation}!control\+\_\+pid@{control\+\_\+pid}}
+\index{control\+\_\+pid@{control\+\_\+pid}!Robot\+Navigation@{Robot\+Navigation}}
+\subsubsection{\texorpdfstring{control\+\_\+pid()}{control\_pid()}}
+{\footnotesize\ttfamily mat Robot\+Navigation\+::control\+\_\+pid (\begin{DoxyParamCaption}\item[{mat}]{aimed\+\_\+state,  }\item[{mat}]{control\+\_\+gains }\end{DoxyParamCaption})}
+
+
+
+Performs a Proporcional-\/\+Integral-\/\+Derivative Control. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em aimed\+\_\+state} & desired state of the robot \\
+\hline
+{\em control\+\_\+gains\+\_\+pid} & proportional-\/integral-\/derivative gains (krho\+\_\+p, kalpha\+\_\+p, kalpha\+\_\+i, kalpha\+\_\+d) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+control vector (v,w) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_navigation_a3ecd5c2f6f316b4b41b48cb0c28a944e}\label{class_robot_navigation_a3ecd5c2f6f316b4b41b48cb0c28a944e}} 
+\index{Robot\+Navigation@{Robot\+Navigation}!get\+\_\+state@{get\+\_\+state}}
+\index{get\+\_\+state@{get\+\_\+state}!Robot\+Navigation@{Robot\+Navigation}}
+\subsubsection{\texorpdfstring{get\+\_\+state()}{get\_state()}}
+{\footnotesize\ttfamily mat Robot\+Navigation\+::get\+\_\+state (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Get Robot State. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em landmarks\+\_\+map\+\_\+file} & a text file with all field landmarks \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_navigation_a94927041a7f2f2bc9c45803a84d5a9d6}\label{class_robot_navigation_a94927041a7f2f2bc9c45803a84d5a9d6}} 
+\index{Robot\+Navigation@{Robot\+Navigation}!landmark\+\_\+detection@{landmark\+\_\+detection}}
+\index{landmark\+\_\+detection@{landmark\+\_\+detection}!Robot\+Navigation@{Robot\+Navigation}}
+\subsubsection{\texorpdfstring{landmark\+\_\+detection()}{landmark\_detection()}}
+{\footnotesize\ttfamily mat Robot\+Navigation\+::landmark\+\_\+detection (\begin{DoxyParamCaption}\item[{mat}]{state,  }\item[{mat}]{landmarks\+\_\+map }\end{DoxyParamCaption})}
+
+
+
+Performs a landmarks detection given robot position. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & robot actual state \\
+\hline
+{\em landmarks\+\_\+map} & a map of landmarks of the field \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+landmarks seen from that stae 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_navigation_af936fdf445213270848a4fc881d1cdb7}\label{class_robot_navigation_af936fdf445213270848a4fc881d1cdb7}} 
+\index{Robot\+Navigation@{Robot\+Navigation}!load\+\_\+landmarks\+\_\+map@{load\+\_\+landmarks\+\_\+map}}
+\index{load\+\_\+landmarks\+\_\+map@{load\+\_\+landmarks\+\_\+map}!Robot\+Navigation@{Robot\+Navigation}}
+\subsubsection{\texorpdfstring{load\+\_\+landmarks\+\_\+map()}{load\_landmarks\_map()}}
+{\footnotesize\ttfamily void Robot\+Navigation\+::load\+\_\+landmarks\+\_\+map (\begin{DoxyParamCaption}\item[{string}]{landmarks\+\_\+map\+\_\+file }\end{DoxyParamCaption})}
+
+
+
+Load Landmarks Map from text file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em imu\+\_\+data\+\_\+file} & a text file with data collected from robots I\+MU \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_robot_navigation_a676195ab5a04e08452dc6fb23f84ce10}\label{class_robot_navigation_a676195ab5a04e08452dc6fb23f84ce10}} 
+\index{Robot\+Navigation@{Robot\+Navigation}!path\+\_\+planner@{path\+\_\+planner}}
+\index{path\+\_\+planner@{path\+\_\+planner}!Robot\+Navigation@{Robot\+Navigation}}
+\subsubsection{\texorpdfstring{path\+\_\+planner()}{path\_planner()}}
+{\footnotesize\ttfamily mat Robot\+Navigation\+::path\+\_\+planner (\begin{DoxyParamCaption}\item[{mat}]{state,  }\item[{mat}]{aimed\+\_\+state,  }\item[{mat}]{ball\+\_\+position,  }\item[{mat}]{robots\+\_\+position }\end{DoxyParamCaption})}
+
+
+
+Plan a path based on ball and Robots position in the field. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & robot actual state \\
+\hline
+{\em aimed\+\_\+state} & desired state of the robot \\
+\hline
+{\em ball\+\_\+position} & position of the ball on the field \\
+\hline
+{\em robots\+\_\+position} & position of all robots to be evaded \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a path (set of points (x,y) ) 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_robot_navigation_a50667808e539f4b632af5f60628cc228}\label{class_robot_navigation_a50667808e539f4b632af5f60628cc228}} 
+\index{Robot\+Navigation@{Robot\+Navigation}!velocity\+\_\+odometry@{velocity\+\_\+odometry}}
+\index{velocity\+\_\+odometry@{velocity\+\_\+odometry}!Robot\+Navigation@{Robot\+Navigation}}
+\subsubsection{\texorpdfstring{velocity\+\_\+odometry()}{velocity\_odometry()}}
+{\footnotesize\ttfamily mat Robot\+Navigation\+::velocity\+\_\+odometry (\begin{DoxyParamCaption}\item[{mat}]{state,  }\item[{mat}]{control\+\_\+vector,  }\item[{float}]{dt }\end{DoxyParamCaption})}
+
+
+
+Performs a odometry from velocity equations. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & robot actual state \\
+\hline
+{\em control\+\_\+vector} & control vector (v,w) \\
+\hline
+{\em dt} & time step \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+new state of the robot 
+\end{DoxyReturn}
+
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 

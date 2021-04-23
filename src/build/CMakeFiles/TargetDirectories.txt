@@ -1,3 +1,0 @@
-/home/olange/AutonomousRobotNavigationAPI/src/build/CMakeFiles/rebuild_cache.dir
-/home/olange/AutonomousRobotNavigationAPI/src/build/CMakeFiles/run.dir
-/home/olange/AutonomousRobotNavigationAPI/src/build/CMakeFiles/edit_cache.dir
