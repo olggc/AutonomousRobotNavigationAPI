@@ -1,5 +1,5 @@
-#ifndef DUMMY_H
-#define DUMMY_H
+#ifndef ROBOTNAVIGATION_H
+#define ROBOTNAVIGATION_H
 #include <armadillo>
 #include <iostream>
 #include <string>	
@@ -139,7 +139,7 @@ class RobotNavigation
         mat get_robots_position();
         /** Get Ellapsed Time
          */ 
-        mat get_ellapsed_time();
+        float get_ellapsed_time();
         /** Performs a Proporcional Control
          * @param aimed_state derised state of the robot
          * @param control_gains_p proportional gains (krho_p, kalpha_p, kbeta_p)
