@@ -4,7 +4,10 @@
 
 #ifndef AUTONOMOUSROBOTNAVIGATIONAPI_KALMANFILTER_H
 #define AUTONOMOUSROBOTNAVIGATIONAPI_KALMANFILTER_H
+#include <iostream>
+#include <armadillo>
 
+using namespace arma;
 
 class KalmanFilter {
 public:
